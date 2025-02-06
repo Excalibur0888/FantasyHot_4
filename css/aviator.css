@@ -387,7 +387,7 @@
 /* CTA Section */
 .cta {
     padding: 100px 20px;
-    background: linear-gradient(rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url('../images/games/aviator-cta.jpg');
+    background: linear-gradient(rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
