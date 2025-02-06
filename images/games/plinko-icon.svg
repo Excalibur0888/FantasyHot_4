@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#082032"/>
+    
+    <!-- Pins Grid -->
+    <circle cx="20" cy="20" r="2" fill="#FF4C29"/>
+    <circle cx="30" cy="20" r="2" fill="#FF4C29"/>
+    <circle cx="40" cy="20" r="2" fill="#FF4C29"/>
+    
+    <circle cx="15" cy="30" r="2" fill="#FF4C29"/>
+    <circle cx="25" cy="30" r="2" fill="#FF4C29"/>
+    <circle cx="35" cy="30" r="2" fill="#FF4C29"/>
+    <circle cx="45" cy="30" r="2" fill="#FF4C29"/>
+    
+    <circle cx="20" cy="40" r="2" fill="#FF4C29"/>
+    <circle cx="30" cy="40" r="2" fill="#FF4C29"/>
+    <circle cx="40" cy="40" r="2" fill="#FF4C29"/>
+    
+    <!-- Ball -->
+    <circle cx="30" cy="15" r="4" fill="#FFFFFF">
+        <animate 
+            attributeName="cy"
+            values="15;45;15"
+            dur="2s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+        <animate
+            attributeName="cx"
+            values="30;25;35;30"
+            dur="2s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1"/>
+    </circle>
+    
+    <!-- Multiplier Slots -->
+    <rect x="15" y="45" width="6" height="3" fill="#FF4C29"/>
+    <rect x="27" y="45" width="6" height="3" fill="#FF4C29"/>
+    <rect x="39" y="45" width="6" height="3" fill="#FF4C29"/>
+</svg> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Hexagonal Background -->
+    <path d="M50 5L90 25V75L50 95L10 75V25L50 5Z" fill="#FF4C29"/>
+    
+    <!-- Inner Hexagon -->
+    <path d="M50 15L80 30V70L50 85L20 70V30L50 15Z" stroke="#082032" stroke-width="2" fill="none"/>
+    
+    <!-- Kabaddi Players -->
+    <path d="M35 40C35 40 45 45 50 50" stroke="#082032" stroke-width="2" stroke-linecap="round"/>
+    <path d="M65 40C65 40 55 45 50 50" stroke="#082032" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="35" cy="35" r="5" fill="#082032"/>
+    <circle cx="65" cy="35" r="5" fill="#082032"/>
+    
+    <!-- Text -->
+    <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">IIPKL</text>
+</svg> 

@@ -1,0 +1,323 @@
+/* Game Container */
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    background: #082032;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Game Canvas */
+#gameCanvas {
+    width: 100%;
+    height: 400px;
+    background: #0d2b44;
+    border-radius: 10px;
+}
+
+/* Game Controls */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #0d2b44;
+    border-radius: 10px;
+}
+
+.bet-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.bet-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bet-input label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.bet-input input {
+    padding: 8px 12px;
+    border: 2px solid #FF4C29;
+    border-radius: 5px;
+    background: #082032;
+    color: #ffffff;
+    font-size: 1.1rem;
+    width: 120px;
+}
+
+.bet-input input:focus {
+    outline: none;
+    border-color: #ff6b4a;
+}
+
+/* Laser Controls */
+.laser-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.laser-controls label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.power-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.power-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #082032;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.power-btn:hover {
+    background: #0d3a5c;
+}
+
+.power-btn.active {
+    background: #FF4C29;
+}
+
+/* Power Meter */
+.power-meter {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #1a3b5a;
+}
+
+.meter-label {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.meter-bar {
+    height: 20px;
+    background: #082032;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.meter-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #FF4C29, #ff6b4a);
+    transition: width 0.1s linear;
+}
+
+.meter-value {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Game Stats */
+.game-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stats-section {
+    background: #0d2b44;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.stats-section h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.shots-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.shot-result {
+    background: #082032;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.shot-result.win {
+    color: #4CAF50;
+}
+
+.shot-result.loss {
+    color: #FF4C29;
+}
+
+.top-wins {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.win-record {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #1a3b5a;
+}
+
+/* Game Info */
+.game-info {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    color: #082032;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-section ol,
+.info-section ul {
+    padding-left: 20px;
+}
+
+.info-section li {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.btn-primary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #FF4C29;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ff6b4a;
+}
+
+.btn-primary:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+/* Laser Animation */
+@keyframes laser {
+    0% { transform: scaleY(1); opacity: 1; }
+    100% { transform: scaleY(2); opacity: 0; }
+}
+
+.laser-beam {
+    position: absolute;
+    width: 2px;
+    background: #FF4C29;
+    transform-origin: top;
+    animation: laser 0.2s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .bet-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bet-input,
+    .laser-controls {
+        width: 100%;
+    }
+    
+    .bet-input input {
+        width: 100%;
+    }
+    
+    .power-buttons {
+        justify-content: space-between;
+    }
+    
+    .power-btn {
+        flex: 1;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+    
+    .game-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.progress-ring {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.progress-ring img {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+		color: #FF4C29;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+} 

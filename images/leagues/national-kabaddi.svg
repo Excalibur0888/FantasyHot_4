@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main Circle -->
+    <circle cx="50" cy="50" r="45" fill="#FF4C29"/>
+    
+    <!-- Inner Circle -->
+    <circle cx="50" cy="50" r="35" stroke="#082032" stroke-width="2" fill="none"/>
+    
+    <!-- Map of India Silhouette -->
+    <path d="M35 30C45 25 55 25 65 30C70 40 70 60 65 70C55 75 45 75 35 70C30 60 30 40 35 30Z" stroke="#082032" stroke-width="3" fill="none"/>
+    
+    <!-- Text -->
+    <text x="50" y="75" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">NKC</text>
+    
+    <!-- Stars -->
+    <path d="M30 20L35 30L30 25L25 30L30 20Z" fill="#082032"/>
+    <path d="M50 15L55 25L50 20L45 25L50 15Z" fill="#082032"/>
+    <path d="M70 20L75 30L70 25L65 30L70 20Z" fill="#082032"/>
+</svg> 

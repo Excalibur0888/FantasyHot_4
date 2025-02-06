@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="Contact Us - Experience thrilling arcade action and win big prizes at FantasyHotMaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FantasyHotMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header (Same as index.html) -->
+		<header>
+			<nav class="main-nav">
+					<div class="nav-container">
+							<div class="nav-content">
+									<div class="logo">
+											<a href="index.html">
+													<img src="images/logo.svg" alt="FantasyHotMaster Logo">
+											</a>
+									</div>
+									<button class="burger-menu" aria-label="Toggle menu">
+											<img src="images/icons/menu-burger.svg" alt="Menu" width="24" height="24">
+									</button>
+									<div class="nav-menu">
+											<ul class="nav-links">
+													<li class="nav-item">
+															<a href="index.html" class="nav-link">
+																	<img src="images/icons/home.svg" alt="Home" class="nav-icon">
+																	Home
+															</a>
+													</li>
+													<li class="nav-item">
+															<a href="javascript:void(0)" class="nav-link">
+																	<img src="images/icons/sports.svg" alt="Sports" class="nav-icon">
+																	Sports
+															</a>
+															<div class="dropdown-menu">
+																	<a href="football.html">Football</a>
+																	<a href="basketball.html">Basketball</a>
+																	<a href="cricket.html">Cricket</a>
+																	<a href="kabaddi.html">Kabaddi</a>
+															</div>
+													</li>
+													<li class="nav-item">
+															<a href="javascript:void(0)" class="nav-link">
+																	<img src="images/icons/games.svg" alt="Games" class="nav-icon">
+																	Games
+															</a>
+															<div class="dropdown-menu">
+																	<a href="aviator.html">Aviator</a>
+																	<a href="plinko.html">Plinko</a>
+																	<a href="laser247.html">Laser247</a>
+																	<a href="101f.html">101F</a>
+															</div>
+													</li>
+													<li class="nav-item">
+															<a href="blog.html" class="nav-link">
+																	<img src="images/icons/blog.svg" alt="Blog" class="nav-icon">
+																	Blog
+															</a>
+													</li>
+													<li class="nav-item">
+															<a href="contact.html" class="nav-link">
+																	<img src="images/icons/contact.svg" alt="Contact" class="nav-icon">
+																	Contact
+															</a>
+													</li>
+											</ul>
+									</div>
+							</div>
+					</div>
+			</nav>
+	</header>
+
+    <!-- Contact Content -->
+    <main class="contact-content">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-grid">
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <div class="icon">
+                        <img src="images/icons/email.svg" alt="Email icon" width="24" height="24">
+                    </div>
+                    <div class="details">
+                        <h3>Email Us</h3>
+                        <p>support@fantasyhotmaster.com</p>
+                        <span class="support-tag">24/7 Customer Support</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <img src="images/icons/phone.svg" alt="Phone icon" width="24" height="24">
+                    </div>
+                    <div class="details">
+                        <h3>Call Us</h3>
+                        <p>+91 XXXXX XXXXX</p>
+                        <span class="support-tag">Mon-Fri 9:00-18:00</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <img src="images/icons/chat.svg" alt="Chat icon" width="24" height="24">
+                    </div>
+                    <div class="details">
+                        <h3>Live Chat</h3>
+                        <p>Chat with our support team</p>
+                        <span class="support-tag">Available 24/7</span>
+                    </div>
+                </div>
+                
+                <div class="support-hours">
+                    <h3>Support Hours</h3>
+                    <p>Email Support: 24/7</p>
+                    <p>Phone Support: Monday to Friday, 9:00 AM - 6:00 PM IST</p>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="contact.html" class="social-icon">
+                            <img src="images/icons/facebook.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="contact.html" class="social-icon">
+                            <img src="images/icons/twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="contact.html" class="social-icon">
+                            <img src="images/icons/instagram.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form action="thanks_form.php" method="post" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" style="color: white; background-color: black;">Select a subject</option>
+                            <option value="general" style="color: white; background-color: black;">General Inquiry</option>
+                            <option value="support" style="color: white; background-color: black;">Technical Support</option>
+                            <option value="billing" style="color: white; background-color: black;">Billing Question</option>
+                            <option value="other" style="color: white; background-color: black;">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="terms-conditions.html">Terms & Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I create an account?</h3>
+                    <p>Click on the "Register" button at the top of the page and follow the simple registration process. You'll need to provide basic information and verify your email.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I withdraw my winnings?</h3>
+                    <p>You can withdraw your winnings through various payment methods including UPI, bank transfer, and digital wallets. Withdrawals are processed within 24-48 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my personal information secure?</h3>
+                    <p>Yes, we use industry-standard security measures to protect your personal and financial information. All data is encrypted and stored securely.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I have trouble accessing my account?</h3>
+                    <p>You can use the "Forgot Password" option or contact our 24/7 customer support team for immediate assistance with account access issues.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+			<div class="footer-content">
+					<div class="footer-brand">
+							<a href="index.html"><img src="images/logo.svg" alt="FantasyHotMaster Logo"></a>
+							<div class="footer-brand-info">
+									<a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer" style="display: inline-block; ">
+											<img src="images/6.png" alt="GamCare Logo" style="display: block; width: 100px; height: auto;">
+									</a>
+									<span style="display: inline-block; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 50%; color: #fff; text-align: center; line-height: 36px; margin-left: 1rem;">18+</span>
+							</div>
+							<p>Your premier destination for fantasy sports and arcade gaming</p>
+							<div class="social-links">
+									<a href="contact.html" class="social-link">
+											<img src="images/icons/facebook.svg" alt="Facebook">
+									</a>
+									<a href="contact.html" class="social-link">
+											<img src="images/icons/twitter.svg" alt="Twitter">
+									</a>
+									<a href="contact.html" class="social-link">
+											<img src="images/icons/instagram.svg" alt="Instagram">
+									</a>
+							</div>
+					</div>
+					
+					<div class="footer-section">
+							<h3>Quick Links</h3>
+							<ul>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact</a></li>
+							</ul>
+					</div>
+					
+					<div class="footer-section">
+							<h3>Games</h3>
+							<ul>
+									<li><a href="cricket.html">Cricket</a></li>
+									<li><a href="football.html">Football</a></li>
+									<li><a href="basketball.html">Basketball</a></li>
+									<li><a href="kabaddi.html">Kabaddi</a></li>
+							</ul>
+					</div>
+					
+					<div class="footer-section">
+							<h3>Arcade Games</h3>
+							<ul>
+									<li><a href="aviator.html">Aviator</a></li>
+									<li><a href="plinko.html">Plinko</a></li>
+									<li><a href="laser247.html">Laser247</a></li>
+									<li><a href="101f.html">101F</a></li>
+							</ul>
+					</div>
+			</div>
+			
+			<div class="footer-bottom">
+					<p>&copy; 2024 FantasyHotMaster. All rights reserved.</p>
+					<div class="footer-legal">
+							<a href="terms-conditions.html">Terms & Conditions</a>
+							<a href="privacy-policy.html">Privacy Policy</a>
+					</div>
+			</div>
+	</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main Circle -->
+    <circle cx="50" cy="50" r="45" fill="#FF4C29"/>
+    
+    <!-- Palm Tree -->
+    <path d="M45 30C45 30 40 40 50 60C60 40 55 30 55 30" stroke="#082032" stroke-width="3"/>
+    <path d="M35 35C35 35 45 40 50 60C55 40 65 35 65 35" stroke="#082032" stroke-width="3"/>
+    
+    <!-- Text -->
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="bold">CPL</text>
+    
+    <!-- Stars -->
+    <path d="M30 20L35 30L30 25L25 30L30 20Z" fill="#082032"/>
+    <path d="M50 15L55 25L50 20L45 25L50 15Z" fill="#082032"/>
+    <path d="M70 20L75 30L70 25L65 30L70 20Z" fill="#082032"/>
+</svg> 

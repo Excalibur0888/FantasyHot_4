@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Circle Background -->
+    <circle cx="30" cy="30" r="25" fill="#FF4C29"/>
+    
+    <!-- "2X" Text -->
+    <path d="M20 35V25H30V30H20V35H30" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+    <path d="M35 25L45 35M35 35L45 25" stroke="#FFFFFF" stroke-width="3"/>
+    
+    <!-- Sparkles -->
+    <path d="M10 10L12 12M50 10L48 12M10 50L12 48M50 50L48 48" stroke="#082032" stroke-width="2"/>
+    
+    <!-- Energy Lines -->
+    <path d="M30 0V5M30 55V60M0 30H5M55 30H60" stroke="#082032" stroke-width="2"/>
+</svg> 

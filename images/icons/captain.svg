@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Captain's Hat -->
+    <path d="M10 30C10 20 20 15 30 15C40 15 50 20 50 30L30 35L10 30Z" fill="#FF4C29"/>
+    
+    <!-- Hat Band -->
+    <path d="M10 30C20 32 40 32 50 30" stroke="#082032" stroke-width="2"/>
+    
+    <!-- Stars -->
+    <path d="M30 5L32 10L37 11L33.5 15L34 20L30 17.5L26 20L26.5 15L23 11L28 10L30 5Z" fill="#082032"/>
+    <path d="M15 25L17 28L20 29L18 32L18.5 35L15 33L12 35L12.5 32L10 29L13 28L15 25Z" fill="#FFFFFF"/>
+    <path d="M45 25L47 28L50 29L48 32L48.5 35L45 33L42 35L42.5 32L40 29L43 28L45 25Z" fill="#FFFFFF"/>
+    
+    <!-- Crown Base -->
+    <path d="M20 40H40L35 45H25L20 40Z" fill="#082032"/>
+</svg> 

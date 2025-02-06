@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="FantasyHotMaster - Experience thrilling arcade action and win big prizes at FantasyHotMaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantasyHotMaster - Premier Gaming Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div class="modal-overlay hidden" id="ageVerificationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Age Verification Required</h2>
+            </div>
+            <div class="modal-body">
+                <div class="age-icon">
+                    <img src="images/icons/18-plus.svg" alt="18+ Icon" width="48" height="48">
+                </div>
+                <p>You must be 18 years or older to access this site.</p>
+                <p class="verification-question">Are you over 18 years old?</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="verifyAge(true)" class="btn-primary">Yes, I am 18+</button>
+                <button onclick="verifyAge(false)" class="btn-secondary">No, I am under 18</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Restricted Access Modal -->
+    <div class="modal-overlay hidden" id="restrictedModal">
+        <div class="modal-content">
+            <h2>Access Restricted</h2>
+            <p>We apologize, but you must be 18 or older to access this website.</p>
+            <button onclick="closeRestrictedModal()" class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="FantasyHotMaster Logo">
+                        </a>
+                    </div>
+                    <button class="burger-menu" aria-label="Toggle menu">
+                        <img src="images/icons/menu-burger.svg" alt="Menu" width="24" height="24">
+                    </button>
+                    <div class="nav-menu">
+                        <ul class="nav-links">
+														<li class="nav-item">
+																<a href="index.html" class="nav-link">
+																		<img src="images/icons/home.svg" alt="Home" class="nav-icon">
+																		Home
+																</a>
+														</li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    <img src="images/icons/sports.svg" alt="Sports" class="nav-icon">
+                                    Sports
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="football.html">Football</a>
+                                    <a href="basketball.html">Basketball</a>
+                                    <a href="cricket.html">Cricket</a>
+																		<a href="kabaddi.html">Kabaddi</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    <img src="images/icons/games.svg" alt="Games" class="nav-icon">
+                                    Games
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="aviator.html">Aviator</a>
+                                    <a href="plinko.html">Plinko</a>
+                                    <a href="laser247.html">Laser247</a>
+                                    <a href="101f.html">101F</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">
+                                    <img src="images/icons/blog.svg" alt="Blog" class="nav-icon">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    <img src="images/icons/contact.svg" alt="Contact" class="nav-icon">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Experience Next-Level Gaming</h1>
+                    <p class="hero-subtitle">Join millions of players worldwide in the most exciting fantasy sports and arcade games platform</p>
+                    <div class="hero-actions">
+                        <a href="contact.html"><button class="btn-primary">Start Playing</button></a>
+                        <a href="blog.html"><button class="btn-secondary">Learn More</button></a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">1M+</span>
+                            <span class="stat-label">Active Players</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">100M+</span>
+                            <span class="stat-label">Points Earned</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-illustration.svg" alt="Gaming Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Players -->
+        <section class="featured-players">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Players</h2>
+                    <p>Top performers from various sports</p>
+                </div>
+                <div class="players-grid">
+                    <div class="player-card gold">
+                        <div class="player-content">
+                            <div class="card-type">Elite</div>
+                            <div class="player-image">
+                                <img src="images/player1.jpg" alt="Alex Thompson">
+                            </div>
+                            <h3>Alex Thompson</h3>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="value">98</span>
+                                    <span class="label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card gold">
+                        <div class="player-content">
+                            <div class="card-type">Pro</div>
+                            <div class="player-image">
+                                <img src="images/player2.jpg" alt="Sarah Chen">
+                            </div>
+                            <h3>Sarah Chen</h3>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="value">95</span>
+                                    <span class="label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card gold">
+                        <div class="player-content">
+                            <div class="card-type">Rising Star</div>
+                            <div class="player-image">
+                                <img src="images/player3.jpg" alt="Mike Rodriguez">
+                            </div>
+                            <h3>Mike Rodriguez</h3>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="value">92</span>
+                                    <span class="label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card gold">
+                        <div class="player-content">
+                            <div class="card-type">Elite</div>
+                            <div class="player-image">
+                                <img src="images/player4.jpg" alt="Emma Wilson">
+                            </div>
+                            <h3>Emma Wilson</h3>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="value">97</span>
+                                    <span class="label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card gold">
+                        <div class="player-content">
+                            <div class="card-type">Pro</div>
+                            <div class="player-image">
+                                <img src="images/player5.jpg" alt="David Kim">
+                            </div>
+                            <h3>David Kim</h3>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="value">94</span>
+                                    <span class="label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card gold">
+                        <div class="player-content">
+                            <div class="card-type">Rising Star</div>
+                            <div class="player-image">
+                                <img src="images/player6.jpg" alt="Lisa Patel">
+                            </div>
+                            <h3>Lisa Patel</h3>
+                            <div class="player-stats">
+                                <div class="stat">
+                                    <span class="value">91</span>
+                                    <span class="label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Power Boosts -->
+        <section class="main-power-boosts">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Power Boosts</h2>
+                    <p>Enhance your gaming experience</p>
+                </div>
+                <div class="main-timeline">
+                    <div class="main-boost-card">
+                        <div class="main-boost-icon">
+                            <img src="images/icons/double-points.svg" alt="Double Points" width="60" height="60">
+                        </div>
+                        <h3>Double Points</h3>
+                        <p>Double your points for the next game</p>
+                        <div class="main-boost-price">
+                            <span>1000 Points</span>
+                            <a href="contact.html"><button class="btn-primary">Activate</button></a>
+                        </div>
+                    </div>
+                    <div class="main-boost-card">
+                        <div class="main-boost-icon">
+                            <img src="images/icons/power-play.svg" alt="Power Play" width="60" height="60">
+                        </div>
+                        <h3>Power Play</h3>
+                        <p>Increase your winning chances by 50%</p>
+                        <div class="main-boost-price">
+                            <span>2000 Points</span>
+                            <a href="contact.html"><button class="btn-primary">Activate</button></a>
+                        </div>
+                    </div>
+                    <div class="main-boost-card">
+                        <div class="main-boost-icon">
+                            <img src="images/icons/perfect-aim.svg" alt="Perfect Aim" width="60" height="60">
+                        </div>
+                        <h3>Perfect Aim</h3>
+                        <p>Improve accuracy in shooting games</p>
+                        <div class="main-boost-price">
+                            <span>1500 Points</span>
+                            <a href="contact.html"><button class="btn-primary">Activate</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Features -->
+        <section class="interactive-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Game Features</h2>
+                    <p>Discover what makes our platform unique</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card interactive">
+                        <div class="feature-icon">
+                            <img src="images/icons/real-time-stats.svg" alt="Real-time Stats" width="60" height="60">
+                        </div>
+                        <h3>Real-time Stats</h3>
+                        <p>Track your performance with live statistics and analytics</p>
+                    </div>
+                    <div class="feature-card interactive">
+                        <div class="feature-icon">
+                            <img src="images/icons/dynamic-events.svg" alt="Dynamic Events" width="60" height="60">
+                        </div>
+                        <h3>Dynamic Events</h3>
+                        <p>Participate in special events with unique rewards</p>
+                    </div>
+                    <div class="feature-card interactive">
+                        <div class="feature-icon">
+                            <img src="images/icons/custom-games.svg" alt="Custom Games" width="60" height="60">
+                        </div>
+                        <h3>Custom Games</h3>
+                        <p>Create and join custom game rooms with friends</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievement Showcase -->
+        <section class="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Player Achievements</h2>
+                    <p>Unlock special rewards and recognition</p>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <h3>Tournament Champion</h3>
+                        <div class="progress-ring">
+                            <img src="images/icons/achievement-ring.svg" alt="Achievement Progress" width="80" height="80">
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⭐</div>
+                        <h3>Perfect Score</h3>
+                        <div class="progress-ring">
+                            <img src="images/icons/stats-ring.svg" alt="Stats Progress" width="80" height="80">
+                            <span class="progress-text">50%</span>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎮</div>
+                        <h3>Game Master</h3>
+                        <div class="progress-ring">
+                            <img src="images/icons/achievement-ring.svg" alt="Achievement Progress" width="80" height="80">
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🌟</div>
+                        <h3>Rising Star</h3>
+                        <div class="progress-ring">
+                            <img src="images/icons/achievement-ring.svg" alt="Achievement Progress" width="80" height="80">
+                            <span class="progress-text">50%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Tournaments -->
+        <section class="live-tournaments">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Live Tournaments</h2>
+                    <p>Join ongoing tournaments and compete with players worldwide</p>
+                </div>
+                <div class="tournaments-grid">
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <span class="status live">Live</span>
+                            <span class="players">128 Players</span>
+                        </div>
+                        <h3>Weekly Championship</h3>
+                        <div class="tournament-info">
+                            <div class="info-item">
+                                <span class="label">Game</span>
+                                <span class="value">Aviator</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Prize Pool</span>
+                                <span class="value">50,000 Points</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Entry</span>
+                                <span class="value">500 Points</span>
+                            </div>
+                        </div>
+                        <a href="contact.html"><button class="btn-primary">Join Now</button></a>
+                    </div>
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <span class="status live">Live</span>
+                            <span class="players">64 Players</span>
+                        </div>
+                        <h3>Pro League Finals</h3>
+                        <div class="tournament-info">
+                            <div class="info-item">
+                                <span class="label">Game</span>
+                                <span class="value">Plinko</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Prize Pool</span>
+                                <span class="value">25,000 Points</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Entry</span>
+                                <span class="value">250 Points</span>
+                            </div>
+                        </div>
+                        <a href="contact.html"><button class="btn-primary">Join Now</button></a>
+                    </div>
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <span class="status upcoming">Starting Soon</span>
+                            <span class="players">32 Players</span>
+                        </div>
+                        <h3>Rookie Challenge</h3>
+                        <div class="tournament-info">
+                            <div class="info-item">
+                                <span class="label">Game</span>
+                                <span class="value">Laser247</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Prize Pool</span>
+                                <span class="value">10,000 Points</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Entry</span>
+                                <span class="value">100 Points</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Register</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Rankings -->
+        <section class="game-rankings">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Top Players</h2>
+                    <p>Weekly rankings of our best performers</p>
+                </div>
+                <div class="rankings-grid">
+                    <div class="ranking-card">
+                        <div class="game-type">
+                            <img src="images/icons/aviator-icon.svg" alt="Aviator" class="game-icon">
+                            Aviator
+                        </div>
+                        <div class="top-score">250,000 pts</div>
+                        <div class="player-list">
+                            <div class="player-item">
+                                <div class="player-rank">1</div>
+                                <span class="player-name">Alex M.</span>
+                                <span class="player-score">250,000 pts</span>
+                            </div>
+                            <div class="player-item">
+                                <div class="player-rank">2</div>
+                                <span class="player-name">Sarah K.</span>
+                                <span class="player-score">220,000 pts</span>
+                            </div>
+                            <div class="player-item">
+                                <div class="player-rank">3</div>
+                                <span class="player-name">Mike R.</span>
+                                <span class="player-score">180,000 pts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranking-card">
+                        <div class="game-type">
+                            <img src="images/icons/plinko-icon.svg" alt="Plinko" class="game-icon">
+                            Plinko
+                        </div>
+                        <div class="top-score">180,000 pts</div>
+                        <div class="player-list">
+                            <div class="player-item">
+                                <div class="player-rank">1</div>
+                                <span class="player-name">Emma W.</span>
+                                <span class="player-score">180,000 pts</span>
+                            </div>
+                            <div class="player-item">
+                                <div class="player-rank">2</div>
+                                <span class="player-name">John D.</span>
+                                <span class="player-score">150,000 pts</span>
+                            </div>
+                            <div class="player-item">
+                                <div class="player-rank">3</div>
+                                <span class="player-name">Lisa P.</span>
+                                <span class="player-score">120,000 pts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranking-card">
+                        <div class="game-type">
+                            <img src="images/icons/laser-icon.svg" alt="Laser247" class="game-icon">
+                            Laser247
+                        </div>
+                        <div class="top-score">200,000 pts</div>
+                        <div class="player-list">
+                            <div class="player-item">
+                                <div class="player-rank">1</div>
+                                <span class="player-name">Tom H.</span>
+                                <span class="player-score">200,000 pts</span>
+                            </div>
+                            <div class="player-item">
+                                <div class="player-rank">2</div>
+                                <span class="player-name">Anna L.</span>
+                                <span class="player-score">175,000 pts</span>
+                            </div>
+                            <div class="player-item">
+                                <div class="player-rank">3</div>
+                                <span class="player-name">Chris B.</span>
+                                <span class="player-score">150,000 pts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Playing?</h2>
+                    <p>Join thousands of players and start earning points today!</p>
+                    <a href="contact.html"><button class="btn-primary">Start Playing</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Disclaimer Section -->
+    <section class="disclaimer-section">
+        <div class="disclaimer-content">
+            <h2>Disclaimer</h2>
+            <p>The games offered by us are real money games, which should be played for entertainment purposes and are not an employment opportunity. These games involve elements of financial risk and at times may be addictive. We therefore encourage our players to keep it fun and participate responsibly and at your own risk.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html"><img src="images/logo.svg" alt="FantasyHotMaster Logo"></a>
+                <div class="footer-brand-info">
+                    <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer" style="display: inline-block; ">
+                        <img src="images/6.png" alt="GamCare Logo" style="display: block; width: 100px; height: auto;">
+                    </a>
+                    <span style="display: inline-block; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 50%; color: #fff; text-align: center; line-height: 36px; margin-left: 1rem;">18+</span>
+                </div>
+                <p>Your premier destination for fantasy sports and arcade gaming</p>
+                <div class="social-links">
+                    <a href="contact.html" class="social-link">
+                        <img src="images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="contact.html" class="social-link">
+                        <img src="images/icons/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="contact.html" class="social-link">
+                        <img src="images/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Games</h3>
+                <ul>
+                    <li><a href="cricket.html">Cricket</a></li>
+                    <li><a href="football.html">Football</a></li>
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="kabaddi.html">Kabaddi</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Arcade Games</h3>
+                <ul>
+                    <li><a href="aviator.html">Aviator</a></li>
+                    <li><a href="plinko.html">Plinko</a></li>
+                    <li><a href="laser247.html">Laser247</a></li>
+                    <li><a href="101f.html">101F</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 FantasyHotMaster. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="terms-conditions.html">Terms & Conditions</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/age-verification.js"></script>
+    <script src="js/achievements.js"></script>
+</body>
+</html> 

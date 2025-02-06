@@ -1,0 +1,732 @@
+/* Game Container */
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    background: #082032;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Game Canvas */
+#gameCanvas {
+    width: 100%;
+    height: 400px;
+    background: #0d2b44;
+    border-radius: 10px;
+}
+
+/* Game Controls */
+.game-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #0d2b44;
+    border-radius: 10px;
+}
+
+.bet-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.bet-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bet-input label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.bet-input input {
+    padding: 8px 12px;
+    border: 2px solid #FF4C29;
+    border-radius: 5px;
+    background: #082032;
+    color: #ffffff;
+    font-size: 1.1rem;
+    width: 120px;
+}
+
+.bet-input input:focus {
+    outline: none;
+    border-color: #ff6b4a;
+}
+
+.multiplier {
+    text-align: center;
+    color: #ffffff;
+}
+
+.multiplier span {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+#currentMultiplier {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF4C29;
+}
+
+/* Game Stats */
+.game-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stats-section {
+    background: #0d2b44;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.stats-section h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.rounds-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.round-result {
+    background: #082032;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.round-result.win {
+    color: #4CAF50;
+}
+
+.round-result.loss {
+    color: #FF4C29;
+}
+
+.top-wins {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.win-record {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #1a3b5a;
+}
+
+/* Game Info */
+.game-info {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    color: #082032;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-section ol,
+.info-section ul {
+    padding-left: 20px;
+}
+
+.info-section li {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background: #FF4C29;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #ff6b4a;
+}
+
+.btn-secondary {
+    background: #4CAF50;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #45a049;
+}
+
+.btn-secondary:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .bet-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bet-input {
+        width: 100%;
+    }
+    
+    .bet-input input {
+        width: 100%;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+    
+    .game-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Features Section */
+.features {
+    padding: 80px 20px;
+    background: #f5f5f5;
+}
+
+.features h2 {
+    text-align: center;
+    color: #082032;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #082032;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* How to Play */
+.how-to-play {
+    padding: 80px 20px;
+}
+
+.how-to-play h2 {
+    text-align: center;
+    color: #082032;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-card {
+    text-align: center;
+    padding: 30px;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #FF4C29;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.step-card h3 {
+    color: #082032;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Statistics */
+.statistics {
+    padding: 80px 20px;
+    background: #082032;
+    color: #ffffff;
+}
+
+.statistics h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF4C29;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.cta {
+    padding: 100px 20px;
+    background: linear-gradient(rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url('../images/games/aviator-cta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background: #FF4C29;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #ff6b4a;
+}
+
+.btn-secondary {
+    background: #082032;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #0d3a5c;
+}
+
+@media (max-width: 768px) {
+
+    .features h2,
+    .how-to-play h2,
+    .statistics h2,
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .feature-card,
+    .step-card {
+        padding: 20px;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Boosts Section */
+.live-multipliers {
+    padding: 80px 0;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    position: relative;
+    overflow: hidden;
+}
+
+.live-multipliers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.svg') repeat;
+    opacity: 0.1;
+    animation: slide 20s linear infinite;
+}
+
+.multipliers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.multiplier-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.multiplier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.multiplier-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 76, 41, 0.1), rgba(255, 76, 41, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.multiplier-card:hover::before {
+    opacity: 1;
+}
+
+.multiplier-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--light-color);
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.multiplier-value::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.boost-info {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.boost-info span {
+		color: #000;
+		font-weight: 500;
+		font-size: 1.2rem;
+}
+
+.boost-name {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--light-color);
+    margin-bottom: 5px;
+}
+
+.boost-duration {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.boost-duration::before {
+    content: '⏱';
+    margin-right: 5px;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.multiplier-card .btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.multiplier-card .btn-primary:hover {
+    background: #ff6b4a;
+    transform: translateY(-2px);
+}
+
+.multiplier-card .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.multiplier-card .btn-primary:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Strategy Guide Section */
+.strategy-guide {
+    padding: 100px 0;
+    background: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.strategy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.strategy-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.strategy-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.strategy-image:hover .strategy-photo {
+    transform: scale(1.05);
+}
+
+.strategy-tips {
+    display: grid;
+    gap: 30px;
+}
+
+.tip-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.tip-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tip-card p {
+    color: var(--light-color);
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .strategy-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .multiplier-card {
+        padding: 20px;
+    }
+
+    .multiplier-value {
+        font-size: 1.5rem;
+    }
+
+    .tip-card {
+        padding: 20px;
+    }
+
+    .tip-number {
+        font-size: 2rem;
+    }
+} 

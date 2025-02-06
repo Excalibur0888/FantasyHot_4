@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Elements -->
+    <circle cx="300" cy="200" r="180" fill="#2C394B" opacity="0.1"/>
+    <circle cx="300" cy="200" r="150" fill="#2C394B" opacity="0.2"/>
+    
+    <!-- Gaming Elements -->
+    <g transform="translate(200, 100)">
+        <!-- Floating Cards -->
+        <g class="floating-card" style="animation: float 6s ease-in-out infinite">
+            <rect x="0" y="0" width="80" height="120" rx="10" fill="#FF4C29"/>
+            <circle cx="40" cy="30" r="15" fill="#ffffff"/>
+            <rect x="20" y="60" width="40" height="6" rx="3" fill="#ffffff"/>
+            <rect x="20" y="75" width="40" height="6" rx="3" fill="#ffffff"/>
+        </g>
+        
+        <g class="floating-card" style="animation: float 6s ease-in-out infinite 1s">
+            <rect x="100" y="50" width="80" height="120" rx="10" fill="#082032"/>
+            <circle cx="140" cy="80" r="15" fill="#ffffff"/>
+            <rect x="120" y="110" width="40" height="6" rx="3" fill="#ffffff"/>
+            <rect x="120" y="125" width="40" height="6" rx="3" fill="#ffffff"/>
+        </g>
+        
+        <g class="floating-card" style="animation: float 6s ease-in-out infinite 2s">
+            <rect x="200" y="0" width="80" height="120" rx="10" fill="#FF4C29"/>
+            <circle cx="240" cy="30" r="15" fill="#ffffff"/>
+            <rect x="220" y="60" width="40" height="6" rx="3" fill="#ffffff"/>
+            <rect x="220" y="75" width="40" height="6" rx="3" fill="#ffffff"/>
+        </g>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <g transform="translate(150, 300)">
+        <!-- Stars -->
+        <path d="M0 0L5 15L0 10L-5 15L0 0Z" fill="#FF4C29">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 0 0"
+                to="360 0 0"
+                dur="4s"
+                repeatCount="indefinite"/>
+        </path>
+        
+        <path d="M300 -100L305 -85L300 -90L295 -85L300 -100Z" fill="#FF4C29">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 300 -100"
+                to="360 300 -100"
+                dur="4s"
+                repeatCount="indefinite"/>
+        </path>
+        
+        <!-- Circles -->
+        <circle cx="150" cy="-150" r="5" fill="#FF4C29">
+            <animate
+                attributeName="r"
+                values="5;8;5"
+                dur="2s"
+                repeatCount="indefinite"/>
+        </circle>
+        
+        <circle cx="-50" cy="50" r="5" fill="#FF4C29">
+            <animate
+                attributeName="r"
+                values="5;8;5"
+                dur="2s"
+                repeatCount="indefinite"
+                begin="1s"/>
+        </circle>
+    </g>
+    
+    <!-- Animation Definitions -->
+    <defs>
+        <style type="text/css">
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-20px); }
+            }
+        </style>
+    </defs>
+</svg> 

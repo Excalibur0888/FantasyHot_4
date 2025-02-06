@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#082032"/>
+    
+    <!-- Target -->
+    <circle cx="45" cy="30" r="8" fill="#FF4C29">
+        <animate
+            attributeName="cx"
+            values="15;45;15"
+            dur="3s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+    </circle>
+    <circle cx="45" cy="30" r="4" fill="#082032">
+        <animate
+            attributeName="cx"
+            values="15;45;15"
+            dur="3s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+    </circle>
+    
+    <!-- Laser Base -->
+    <rect x="25" y="45" width="10" height="5" fill="#FF4C29"/>
+    
+    <!-- Laser Beam -->
+    <path d="M30 45L30 15" stroke="#FF4C29" stroke-width="2" stroke-dasharray="2 2">
+        <animate
+            attributeName="opacity"
+            values="0.3;1;0.3"
+            dur="1s"
+            repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Power Indicator -->
+    <circle cx="30" cy="45" r="3" fill="#FFFFFF">
+        <animate
+            attributeName="r"
+            values="2;3;2"
+            dur="1s"
+            repeatCount="indefinite"/>
+    </circle>
+</svg> 

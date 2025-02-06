@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main Shield -->
+    <path d="M50 5L90 20V45C90 65 75 85 50 95C25 85 10 65 10 45V20L50 5Z" fill="#FF4C29"/>
+    
+    <!-- Inner Shield -->
+    <path d="M50 15L80 27V45C80 60 65 75 50 85C35 75 20 60 20 45V27L50 15Z" stroke="#082032" stroke-width="2" fill="none"/>
+    
+    <!-- Text -->
+    <text x="50" y="45" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="bold">IPL</text>
+    
+    <!-- Stars -->
+    <path d="M35 55L40 65L35 60L30 65L35 55Z" fill="#082032"/>
+    <path d="M65 55L70 65L65 60L60 65L65 55Z" fill="#082032"/>
+    <path d="M50 50L55 60L50 55L45 60L50 50Z" fill="#082032"/>
+</svg> 

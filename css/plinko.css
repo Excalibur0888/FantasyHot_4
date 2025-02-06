@@ -1,0 +1,607 @@
+/* Game Container */
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    background: #082032;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Game Canvas */
+#gameCanvas {
+    width: 100%;
+    height: 500px;
+    background: #0d2b44;
+    border-radius: 10px;
+}
+
+/* Game Controls */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #0d2b44;
+    border-radius: 10px;
+}
+
+.bet-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.bet-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bet-input label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.bet-input input {
+    padding: 8px 12px;
+    border: 2px solid #FF4C29;
+    border-radius: 5px;
+    background: #082032;
+    color: #ffffff;
+    font-size: 1.1rem;
+    width: 120px;
+}
+
+.bet-input input:focus {
+    outline: none;
+    border-color: #ff6b4a;
+}
+
+/* Risk Selector */
+.risk-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.risk-selector label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.risk-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.risk-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #082032;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.risk-btn:hover {
+    background: #0d3a5c;
+}
+
+.risk-btn.active {
+    background: #FF4C29;
+}
+
+/* Multipliers */
+.multipliers {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #1a3b5a;
+}
+
+.multiplier-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.multiplier-row span {
+    color: #FF4C29;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Game Stats */
+.game-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stats-section {
+    background: #0d2b44;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.stats-section h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.drops-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.drop-result {
+    background: #082032;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.drop-result.win {
+    color: #4CAF50;
+}
+
+.top-wins {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.win-record {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #1a3b5a;
+}
+
+/* Game Info */
+.game-info {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    color: #082032;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-section ol,
+.info-section ul {
+    padding-left: 20px;
+}
+
+.info-section li {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.btn-primary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #FF4C29;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ff6b4a;
+}
+
+.btn-primary:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+/* Ball Animation */
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.bouncing {
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Drop Statistics Section */
+.live-drops {
+    padding: 80px 0;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    color: var(--light-color);
+}
+
+.drops-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.drops-visualization {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.board-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.board-preview:hover {
+    transform: scale(1.02);
+}
+
+.drops-stats {
+    display: grid;
+    gap: 30px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-box h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.slot-distribution {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    padding: 20px 0;
+}
+
+.slot-bar {
+    width: 60px;
+    background: linear-gradient(180deg, var(--primary-color), #ff6b4a);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    transition: height 0.3s ease;
+}
+
+.slot-value {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    color: var(--light-color);
+}
+
+.wins-list {
+    display: grid;
+    gap: 15px;
+}
+
+.win-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.win-item:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.player-name {
+    font-weight: 500;
+		color: var(--light-color);
+}
+
+.score {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Game Modes Section */
+.game-modes {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    position: relative;
+    overflow: hidden;
+}
+
+.game-modes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.svg') repeat;
+    opacity: 0.05;
+    animation: slide 20s linear infinite;
+}
+
+.game-modes h2 {
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.modes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.mode-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mode-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.mode-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 76, 41, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mode-card:hover::before {
+    opacity: 1;
+}
+
+.mode-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+.mode-card:hover .mode-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.mode-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.mode-card h3 {
+    color: var(--light-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.mode-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.mode-card p {
+	text-align: center;
+	color: var(--light-color);
+}
+
+.mode-features {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.mode-features li {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.mode-features li:hover {
+    transform: translateX(5px);
+}
+
+.mode-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.mode-card .btn-primary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mode-card .btn-primary:hover {
+    background: #ff6b4a;
+    transform: translateY(-2px);
+}
+
+.mode-card .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.mode-card .btn-primary:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-info {
+        order: -1;
+    }
+    
+    .drops-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .bet-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bet-input,
+    .risk-selector {
+        width: 100%;
+    }
+    
+    .bet-input input {
+        width: 100%;
+    }
+    
+    .risk-buttons {
+        justify-content: space-between;
+    }
+    
+    .risk-btn {
+        flex: 1;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+    
+    .game-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .multiplier-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .multiplier-row span {
+        flex: 0 0 calc(33.33% - 10px);
+    }
+    
+    .slot-distribution {
+        height: 150px;
+    }
+
+    .slot-bar {
+        width: 40px;
+    }
+
+    .modes-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .mode-card {
+        padding: 25px;
+    }
+
+    .mode-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mode-card h3 {
+        font-size: 1.5rem;
+    }
+} 

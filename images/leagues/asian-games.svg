@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main Circle -->
+    <circle cx="50" cy="50" r="45" fill="#FF4C29"/>
+    
+    <!-- Asian Games Sun Symbol -->
+    <circle cx="50" cy="50" r="25" stroke="#082032" stroke-width="3" fill="none"/>
+    <path d="M50 20L50 80M20 50L80 50M35 35L65 65M65 35L35 65" stroke="#082032" stroke-width="2"/>
+    
+    <!-- Text -->
+    <text x="50" y="50" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">AG</text>
+    
+    <!-- Decorative Elements -->
+    <path d="M15 50C20 40 30 35 40 35" stroke="#082032" stroke-width="2" fill="none"/>
+    <path d="M85 50C80 40 70 35 60 35" stroke="#082032" stroke-width="2" fill="none"/>
+    <path d="M15 50C20 60 30 65 40 65" stroke="#082032" stroke-width="2" fill="none"/>
+    <path d="M85 50C80 60 70 65 60 65" stroke="#082032" stroke-width="2" fill="none"/>
+</svg> 

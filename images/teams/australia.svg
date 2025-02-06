@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#00008B"/>
+  <g id="union_jack">
+    <path d="M0 0h640v320H0z" fill="#012169"/>
+    <path d="M0 0l640 320M640 0L0 320" stroke="#fff" stroke-width="64"/>
+    <path d="M0 0l640 320M640 0L0 320" stroke="#C8102E" stroke-width="21.3"/>
+    <path d="M320 0v320M0 160h640" stroke="#fff" stroke-width="106.7"/>
+    <path d="M320 0v320M0 160h640" stroke="#C8102E" stroke-width="64"/>
+  </g>
+  <g id="southern_cross">
+    <polygon points="900,60 916,110 970,110 925,142 942,192 900,160 858,192 875,142 830,110 884,110" fill="#fff"/>
+    <polygon points="900,350 908,375 935,375 913,391 921,416 900,400 879,416 887,391 865,375 892,375" fill="#fff"/>
+    <polygon points="1050,170 1058,195 1085,195 1063,211 1071,236 1050,220 1029,236 1037,211 1015,195 1042,195" fill="#fff"/>
+    <polygon points="750,200 758,225 785,225 763,241 771,266 750,250 729,266 737,241 715,225 742,225" fill="#fff"/>
+    <polygon points="1000,290 1008,315 1035,315 1013,331 1021,356 1000,340 979,356 987,331 965,315 992,315" fill="#fff"/>
+  </g>
+  <g id="commonwealth_star">
+    <polygon points="320,60 340,120 405,120 350,157 370,217 320,180 270,217 290,157 235,120 300,120" fill="#fff"/>
+  </g>
+</svg>

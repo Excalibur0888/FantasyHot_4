@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <path fill="#C8102E" d="M256 64l192 48v288l-192 48-192-48V112z"/>
+  <path fill="#FFF" d="M256 96l160 40v240l-160 40-160-40V136z"/>
+  <path fill="#C8102E" d="M256 128l128 32v192l-128 32-128-32V160z"/>
+  <path fill="#FFF" d="M256 160l96 24v144l-96 24-96-24V184z"/>
+  <path fill="#C8102E" d="M256 192l64 16v96l-64 16-64-16v-96z"/>
+  <path fill="#FFF" d="M256 224l32 8v48l-32 8-32-8v-48z"/>
+</svg>

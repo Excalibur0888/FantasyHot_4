@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="45" fill="#FF4C29"/>
+    
+    <!-- Inner Circle -->
+    <circle cx="50" cy="50" r="35" stroke="#082032" stroke-width="2" fill="none"/>
+    
+    <!-- Text -->
+    <text x="50" y="45" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="bold">BBL</text>
+    
+    <!-- Stars -->
+    <path d="M30 60L35 70L30 65L25 70L30 60Z" fill="#082032"/>
+    <path d="M50 60L55 70L50 65L45 70L50 60Z" fill="#082032"/>
+    <path d="M70 60L75 70L70 65L65 70L70 60Z" fill="#082032"/>
+    
+    <!-- Cricket Ball Seam -->
+    <path d="M20 50C30 40 70 40 80 50" stroke="#082032" stroke-width="2" fill="none"/>
+    <path d="M20 50C30 60 70 60 80 50" stroke="#082032" stroke-width="2" fill="none"/>
+</svg> 

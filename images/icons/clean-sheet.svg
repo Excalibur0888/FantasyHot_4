@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Shield Shape -->
+    <path d="M30 5L10 15V30C10 40 20 50 30 55C40 50 50 40 50 30V15L30 5Z" fill="#FF4C29"/>
+    
+    <!-- Check Mark -->
+    <path d="M20 30L27 37L40 24" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Shine Effect -->
+    <path d="M30 5L35 7L30 9L25 7L30 5Z" fill="#FFFFFF" fill-opacity="0.5"/>
+</svg> 

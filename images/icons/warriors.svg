@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#1D428A" d="M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0z"/>
+  <path fill="#FFC72C" d="M50 10c22.1 0 40 17.9 40 40S72.1 90 50 90 10 72.1 10 50s17.9-40 40-40"/>
+  <text x="50" y="65" fill="#1D428A" font-family="Arial" font-size="40" text-anchor="middle">GS</text>
+</svg>

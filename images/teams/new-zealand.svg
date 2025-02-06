@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- New Zealand Flag -->
+  <rect width="1200" height="600" fill="#00247D"/>
+  
+  <!-- Southern Cross Stars -->
+  <g fill="#FFFFFF">
+    <!-- Four large stars -->
+    <path d="M316.9,133.5l-11.8,8.6,4.5-13.8-11.8-8.6h14.6l4.5-13.8,4.5,13.8h14.6l-11.8,8.6,4.5,13.8L316.9,133.5z"/>
+    <path d="M316.9,333.5l-11.8,8.6,4.5-13.8-11.8-8.6h14.6l4.5-13.8,4.5,13.8h14.6l-11.8,8.6,4.5,13.8L316.9,333.5z"/>
+    <path d="M416.9,233.5l-11.8,8.6,4.5-13.8-11.8-8.6h14.6l4.5-13.8,4.5,13.8h14.6l-11.8,8.6,4.5,13.8L416.9,233.5z"/>
+    <path d="M216.9,233.5l-11.8,8.6,4.5-13.8-11.8-8.6h14.6l4.5-13.8,4.5,13.8h14.6l-11.8,8.6,4.5,13.8L216.9,233.5z"/>
+  </g>
+  
+  <!-- Union Jack -->
+  <g>
+    <!-- White diagonal crosses -->
+    <path fill="#FFFFFF" d="M0,0 L600,300 M600,0 L0,300" stroke="#FFFFFF" stroke-width="60"/>
+    <!-- Red diagonal crosses -->
+    <path fill="none" d="M0,0 L600,300 M600,0 L0,300" stroke="#CC142B" stroke-width="40"/>
+    <!-- White cross -->
+    <path fill="#FFFFFF" d="M300,0 V300 M0,150 H600" stroke="#FFFFFF" stroke-width="100"/>
+    <!-- Red cross -->
+    <path fill="#CC142B" d="M300,0 V300 M0,150 H600" stroke="#CC142B" stroke-width="60"/>
+  </g>
+</svg>

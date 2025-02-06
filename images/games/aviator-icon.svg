@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="30" cy="30" r="28" fill="#082032"/>
+    
+    <!-- Airplane Body -->
+    <path d="M45 30L20 40L15 35L40 25L45 30Z" fill="#FF4C29"/>
+    <path d="M45 30L20 20L15 25L40 35L45 30Z" fill="#FF4C29"/>
+    
+    <!-- Airplane Wing -->
+    <path d="M35 30L25 40L20 35L30 25L35 30Z" fill="#2C394B"/>
+    
+    <!-- Speed Lines -->
+    <path d="M48 30L52 30" stroke="#FF4C29" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M47 27L51 25" stroke="#FF4C29" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="0.2s"/>
+    </path>
+    <path d="M47 33L51 35" stroke="#FF4C29" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="0.4s"/>
+    </path>
+</svg> 
