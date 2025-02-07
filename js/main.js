@@ -157,6 +157,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Initialize dropdown menus
+    const dropdownLinks = document.querySelectorAll('.nav-link');
+    dropdownLinks.forEach(link => {
+        if (link.nextElementSibling && link.nextElementSibling.classList.contains('dropdown-menu')) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const dropdown = link.nextElementSibling;
+                
+                // Close all other dropdowns
+                dropdownLinks.forEach(otherLink => {
+                    if (otherLink !== link && otherLink.nextElementSibling) {
+                        otherLink.nextElementSibling.classList.remove('show');
+                        otherLink.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current dropdown
+                dropdown.classList.toggle('show');
+                link.classList.toggle('active');
+            });
+        }
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-item')) {
+            document.querySelectorAll('.dropdown-menu').forEach(dropdown => {
+                dropdown.classList.remove('show');
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+        }
+    });
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.nav-menu') && !e.target.closest('.burger-menu') && navMenu?.classList.contains('active')) {

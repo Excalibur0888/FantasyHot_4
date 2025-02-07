@@ -35,7 +35,6 @@ function initializeNewsletterForm() {
 
 function initializePostFilters() {
     const filterButtons = document.querySelectorAll('.tab-btn');
-    const sortSelect = document.getElementById('sortPosts');
     const postsGrid = document.getElementById('postsGrid');
     const posts = Array.from(postsGrid.querySelectorAll('.post-card'));
     
@@ -58,27 +57,6 @@ function initializePostFilters() {
                 }
             });
         });
-    });
-    
-    // Sort posts
-    sortSelect.addEventListener('change', () => {
-        const sortValue = sortSelect.value;
-        const sortedPosts = [...posts].sort((a, b) => {
-            const dateA = new Date(a.querySelector('.date').textContent);
-            const dateB = new Date(b.querySelector('.date').textContent);
-            
-            if (sortValue === 'latest') {
-                return dateB - dateA;
-            } else if (sortValue === 'oldest') {
-                return dateA - dateB;
-            }
-            // For 'popular' sorting, we could add a data attribute for views/likes
-            return 0;
-        });
-        
-        // Clear and re-append sorted posts
-        postsGrid.innerHTML = '';
-        sortedPosts.forEach(post => postsGrid.appendChild(post));
     });
 }
 
